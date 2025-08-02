@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import Logo from '@/components/logo';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
+import { ThemeSwitcher } from '@/components/theme-switcher';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,9 +70,11 @@ export default function Header() {
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/contact">Start Here</Link>
             </Button>
+            <ThemeSwitcher />
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeSwitcher />
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               <span className="sr-only">Toggle menu</span>
