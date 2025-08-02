@@ -127,27 +127,13 @@ export const appThemes: AppThemes = {
     },
   ],
   greyscaleThemes: [
-    {
-      name: "Charcoal",
-      swatchColor: "0 0% 20%",
-      symbol: "●",
-      light: { ...themeTemplate, primary: "0 0% 20%", ring: "0 0% 20%" },
-      dark: { ...darkThemeTemplate, primary: "0 0% 80%", ring: "0 0% 80%" },
-    },
-    {
-      name: "Slate",
-      swatchColor: "215 15% 45%",
-      symbol: "■",
-      light: { ...themeTemplate, primary: "215 15% 45%", ring: "215 15% 45%" },
-      dark: { ...darkThemeTemplate, primary: "215 15% 75%", ring: "215 15% 75%" },
-    },
-     {
-      name: "Stone",
-      swatchColor: "30 5% 50%",
-      symbol: "★",
-      light: { ...themeTemplate, primary: "30 5% 50%", ring: "30 5% 50%" },
-      dark: { ...darkThemeTemplate, primary: "30 5% 80%", ring: "30 5% 80%" },
-    },
+    { name: "Slate", swatchColor: "215 28% 47%", symbol: "●", light: { ...themeTemplate, primary: "215 28% 47%", ring: "215 28% 47%" }, dark: { ...darkThemeTemplate, primary: "215 28% 67%", ring: "215 28% 67%" } },
+    { name: "Gray", swatchColor: "220 9% 46%", symbol: "●", light: { ...themeTemplate, primary: "220 9% 46%", ring: "220 9% 46%" }, dark: { ...darkThemeTemplate, primary: "220 9% 66%", ring: "220 9% 66%" } },
+    { name: "Zinc", swatchColor: "220 13% 42%", symbol: "●", light: { ...themeTemplate, primary: "220 13% 42%", ring: "220 13% 42%" }, dark: { ...darkThemeTemplate, primary: "220 13% 62%", ring: "220 13% 62%" } },
+    { name: "Neutral", swatchColor: "0 0% 45%", symbol: "●", light: { ...themeTemplate, primary: "0 0% 45%", ring: "0 0% 45%" }, dark: { ...darkThemeTemplate, primary: "0 0% 65%", ring: "0 0% 65%" } },
+    { name: "Stone", swatchColor: "25 10% 44%", symbol: "●", light: { ...themeTemplate, primary: "25 10% 44%", ring: "25 10% 44%" }, dark: { ...darkThemeTemplate, primary: "25 10% 64%", ring: "25 10% 64%" } },
+    { name: "Charcoal", swatchColor: "0 0% 20%", symbol: "■", light: { ...themeTemplate, primary: "0 0% 20%", ring: "0 0% 20%", background: "0 0% 95%", border: "0 0% 85%", input: "0 0% 85%", card: "0 0% 95%", popover: "0 0% 95%" }, dark: { ...darkThemeTemplate, primary: "0 0% 80%", ring: "0 0% 80%", background: "0 0% 10%", border: "0 0% 20%", input: "0 0% 20%", card: "0 0% 10%", popover: "0 0% 10%" } },
+    { name: "Steel", swatchColor: "215 15% 45%", symbol: "★", light: { ...themeTemplate, primary: "215 15% 45%", ring: "215 15% 45%", background: "215 15% 95%", border: "215 15% 85%", input: "215 15% 85%", card: "215 15% 95%", popover: "215 15% 95%" }, dark: { ...darkThemeTemplate, primary: "215 15% 75%", ring: "215 15% 75%", background: "215 15% 10%", border: "215 15% 20%", input: "215 15% 20%", card: "215 15% 10%", popover: "215 15% 10%" } },
   ],
 };
 
