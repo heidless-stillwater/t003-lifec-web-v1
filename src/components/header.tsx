@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import Logo from '@/components/logo';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
-import { ThemeSwitcher } from './theme-switcher';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +68,6 @@ export default function Header() {
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/contact">Start Here</Link>
             </Button>
-            <ThemeSwitcher />
           </div>
 
           <div className="md:hidden">
@@ -107,7 +105,6 @@ export default function Header() {
               </Link>
             <div className="flex items-center justify-center gap-4 mt-4">
               <a href="tel:+1234567890" className="text-base font-medium hover:text-primary transition-colors">+1 (234) 567-890</a>
-              <ThemeSwitcher />
             </div>
             <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mt-2">
               <Link href="/contact">Start Here</Link>
