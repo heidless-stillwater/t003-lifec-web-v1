@@ -75,8 +75,10 @@ function CustomThemeProvider({
     const root = document.documentElement;
     const theme = currentThemeDef[mode as ThemeMode];
 
-    for (const [key, value] of Object.entries(theme)) {
-        root.style.setProperty(key, value);
+    if (theme) {
+      for (const [key, value] of Object.entries(theme)) {
+          root.style.setProperty(key, value);
+      }
     }
 
     try {
