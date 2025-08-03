@@ -53,9 +53,11 @@ function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size
     const { mode } = useTheme();
     const sizeClasses = size === 'md' ? 'w-4 h-4' : 'w-3 h-3'
 
-    const primaryColor = theme[mode]['--primary'];
-    const accentColor = theme.light['--accent']; // Use a fixed accent for swatch consistency
+    const primaryColor = theme[mode]?.['--primary'] || theme.light['--primary'];
+    const accentColor = theme.light?.['--accent']; // Use a fixed accent for swatch consistency
     
+    if (!primaryColor || !accentColor) return null;
+
     return (
         <div className="relative flex items-center justify-center" style={{ width: size === 'md' ? '20px' : '16px', height: size === 'md' ? '20px' : '16px' }}>
             <div 
